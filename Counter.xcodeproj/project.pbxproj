@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FB353FBE25F35E7600567563 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB353FBD25F35E7600567563 /* AppDelegate.swift */; };
-		FB353FC025F35E7600567563 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB353FBF25F35E7600567563 /* SceneDelegate.swift */; };
 		FB353FC225F35E7600567563 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB353FC125F35E7600567563 /* ViewController.swift */; };
-		FB353FC525F35E7600567563 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB353FC325F35E7600567563 /* Main.storyboard */; };
 		FB353FC725F35E7700567563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB353FC625F35E7700567563 /* Assets.xcassets */; };
 		FB353FCA25F35E7700567563 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB353FC825F35E7700567563 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,9 +16,7 @@
 /* Begin PBXFileReference section */
 		FB353FBA25F35E7600567563 /* Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Counter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB353FBD25F35E7600567563 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FB353FBF25F35E7600567563 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FB353FC125F35E7600567563 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FB353FC425F35E7600567563 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB353FC625F35E7700567563 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB353FC925F35E7700567563 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB353FCB25F35E7700567563 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,9 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				FB353FBD25F35E7600567563 /* AppDelegate.swift */,
-				FB353FBF25F35E7600567563 /* SceneDelegate.swift */,
 				FB353FC125F35E7600567563 /* ViewController.swift */,
-				FB353FC325F35E7600567563 /* Main.storyboard */,
 				FB353FC625F35E7700567563 /* Assets.xcassets */,
 				FB353FC825F35E7700567563 /* LaunchScreen.storyboard */,
 				FB353FCB25F35E7700567563 /* Info.plist */,
@@ -126,7 +120,6 @@
 			files = (
 				FB353FCA25F35E7700567563 /* LaunchScreen.storyboard in Resources */,
 				FB353FC725F35E7700567563 /* Assets.xcassets in Resources */,
-				FB353FC525F35E7600567563 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,21 +132,12 @@
 			files = (
 				FB353FC225F35E7600567563 /* ViewController.swift in Sources */,
 				FB353FBE25F35E7600567563 /* AppDelegate.swift in Sources */,
-				FB353FC025F35E7600567563 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FB353FC325F35E7600567563 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FB353FC425F35E7600567563 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FB353FC825F35E7700567563 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,6 +273,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KVHQPJK67C;
 				INFOPLIST_FILE = Counter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +281,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Vsevolod-Dz..Counter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,6 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KVHQPJK67C;
 				INFOPLIST_FILE = Counter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +301,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Vsevolod-Dz..Counter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
